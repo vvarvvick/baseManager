@@ -9,11 +9,11 @@ namespace Program.db
 {
     class Connection
     {
-        static readonly string server = "mysql-78080-0.cloudclusters.net;";
-        static string port = "19755;";
-        static readonly string database = "base;";
-        static readonly string uId = "admin;";
-        static readonly string password = "44ivq5hD;";
+        static string server = "sql11.freemysqlhosting.net;";
+        static string port = "3306;";
+        static string database = "sql11496640;";
+        static string uId = "sql11496640;";
+        static string password = "NVQalehX4Q;";
         public static MySqlConnection connMaster;
 
         public static MySqlConnection DataSource()

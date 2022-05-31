@@ -71,7 +71,7 @@ namespace Program
             this.pictureBoxHomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxHomeBtn.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxHomeBtn.Name = "pictureBoxHomeBtn";
-            this.pictureBoxHomeBtn.Size = new System.Drawing.Size(241, 135);
+            this.pictureBoxHomeBtn.Size = new System.Drawing.Size(244, 131);
             this.pictureBoxHomeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxHomeBtn.TabIndex = 0;
             this.pictureBoxHomeBtn.TabStop = false;
@@ -80,6 +80,7 @@ namespace Program
             // iconButtonExit
             // 
             this.iconButtonExit.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonExit.FlatAppearance.BorderSize = 0;
             this.iconButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonExit.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.iconButtonExit.ForeColor = System.Drawing.Color.White;
@@ -97,12 +98,13 @@ namespace Program
             this.iconButtonExit.Text = "Exit";
             this.iconButtonExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonExit.UseVisualStyleBackColor = true;
+            this.iconButtonExit.UseVisualStyleBackColor = false;
             this.iconButtonExit.Click += new System.EventHandler(this.iconButtonExit_Click);
             // 
             // iconButtonAdmin
             // 
             this.iconButtonAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonAdmin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.iconButtonAdmin.FlatAppearance.BorderSize = 0;
             this.iconButtonAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonAdmin.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -121,7 +123,7 @@ namespace Program
             this.iconButtonAdmin.Text = "Admin";
             this.iconButtonAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonAdmin.UseVisualStyleBackColor = true;
+            this.iconButtonAdmin.UseVisualStyleBackColor = false;
             this.iconButtonAdmin.Visible = false;
             this.iconButtonAdmin.Click += new System.EventHandler(this.iconButtonAdmin_Click);
             // 
@@ -146,7 +148,7 @@ namespace Program
             this.iconButtonOrder.Text = "Orders";
             this.iconButtonOrder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonOrder.UseVisualStyleBackColor = true;
+            this.iconButtonOrder.UseVisualStyleBackColor = false;
             this.iconButtonOrder.Visible = false;
             this.iconButtonOrder.Click += new System.EventHandler(this.iconButtonOrder_Click);
             // 
@@ -171,7 +173,7 @@ namespace Program
             this.iconButtonBase.Text = "DataBase";
             this.iconButtonBase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonBase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonBase.UseVisualStyleBackColor = true;
+            this.iconButtonBase.UseVisualStyleBackColor = false;
             this.iconButtonBase.Visible = false;
             this.iconButtonBase.Click += new System.EventHandler(this.iconButtonBase_Click);
             // 
@@ -196,7 +198,7 @@ namespace Program
             this.iconButtonClient.Text = "Client";
             this.iconButtonClient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonClient.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonClient.UseVisualStyleBackColor = true;
+            this.iconButtonClient.UseVisualStyleBackColor = false;
             this.iconButtonClient.Visible = false;
             this.iconButtonClient.Click += new System.EventHandler(this.iconButtonClient_Click);
             // 
@@ -221,7 +223,7 @@ namespace Program
             this.iconButtonLogin.Text = "Login";
             this.iconButtonLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonLogin.UseVisualStyleBackColor = true;
+            this.iconButtonLogin.UseVisualStyleBackColor = false;
             this.iconButtonLogin.Click += new System.EventHandler(this.IconButtonLogin_Click);
             // 
             // panelTop
