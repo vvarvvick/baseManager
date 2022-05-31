@@ -1,6 +1,7 @@
 # baseManager
 
 
+#Host
 ****
 server: www.freemysqlhosting.net
 ****
