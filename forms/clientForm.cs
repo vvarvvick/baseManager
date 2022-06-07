@@ -31,7 +31,7 @@ namespace Program.forms
 
         public void FillDGV(string value)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM clients WHERE CONCAT(var, name, registred, description) LIKE '%" + value + "%'");
+            MySqlCommand command = new MySqlCommand("SELECT * FROM clients WHERE CONCAT(var, name, description, nip) LIKE '%" + value + "%'");
             Connection.DataSource();
             command.Connection = Connection.connMaster;
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
@@ -70,7 +70,7 @@ namespace Program.forms
                 conn.connOpen();
                 command.Connection = Connection.connMaster;
                 if (command.ExecuteNonQuery() == 1)
-                    MessageBox.Show("Data Deleted");
+                    MessageBox.Show("Data Deleted", "Delete Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                     MessageBox.Show("Query Not Executed");
                 conn.connClose();

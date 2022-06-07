@@ -17,6 +17,7 @@ namespace Program.forms
         public addClientForm()
         {
             InitializeComponent();
+            button1.Text = "Add Client";
         }
 
         protected override void insert()
@@ -25,7 +26,7 @@ namespace Program.forms
             
 
             if (textBoxLogin.Text.Length < 3 || textBoxPassword.Text.Length < 3)
-                MessageBox.Show("Username or Password is invalid or is short!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Var i Name musza posiadać wiecej niz 3 znaki", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else if (insData.InsertDataClient(
                 textBoxLogin.Text,
                 textBoxPassword.Text,

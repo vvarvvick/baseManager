@@ -94,9 +94,9 @@ namespace Program.forms
             conn.connOpen();
             mcomd.Connection = Connection.connMaster;
             if (mcomd.ExecuteNonQuery() == 1)
-                MessageBox.Show(myMsg);
+                MessageBox.Show(myMsg, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
-                MessageBox.Show("Query Not Executed");
+                MessageBox.Show("Query Not Executed", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             conn.connClose();
         }
 

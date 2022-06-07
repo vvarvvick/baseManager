@@ -29,6 +29,12 @@ namespace Program.forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.dataGridViewTextBoxColumn51 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn52 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn54 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn55 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn11 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -131,7 +137,8 @@ namespace Program.forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(649, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(677, 12);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 123);
             // 
             // textBoxName
             // 
@@ -178,6 +185,43 @@ namespace Program.forms
             // 
             this.textBoxSearch.Location = new System.Drawing.Point(327, 111);
             this.textBoxSearch.Size = new System.Drawing.Size(138, 20);
+            // 
+            // dataGridViewTextBoxColumn51
+            // 
+            this.dataGridViewTextBoxColumn51.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn51.HeaderText = "id";
+            this.dataGridViewTextBoxColumn51.Name = "dataGridViewTextBoxColumn51";
+            // 
+            // dataGridViewTextBoxColumn52
+            // 
+            this.dataGridViewTextBoxColumn52.DataPropertyName = "var";
+            this.dataGridViewTextBoxColumn52.HeaderText = "var";
+            this.dataGridViewTextBoxColumn52.Name = "dataGridViewTextBoxColumn52";
+            // 
+            // dataGridViewTextBoxColumn53
+            // 
+            this.dataGridViewTextBoxColumn53.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn53.HeaderText = "name";
+            this.dataGridViewTextBoxColumn53.Name = "dataGridViewTextBoxColumn53";
+            // 
+            // dataGridViewTextBoxColumn54
+            // 
+            this.dataGridViewTextBoxColumn54.DataPropertyName = "category";
+            this.dataGridViewTextBoxColumn54.HeaderText = "category";
+            this.dataGridViewTextBoxColumn54.Name = "dataGridViewTextBoxColumn54";
+            // 
+            // dataGridViewTextBoxColumn55
+            // 
+            this.dataGridViewTextBoxColumn55.DataPropertyName = "description";
+            this.dataGridViewTextBoxColumn55.HeaderText = "description";
+            this.dataGridViewTextBoxColumn55.Name = "dataGridViewTextBoxColumn55";
+            // 
+            // dataGridViewImageColumn11
+            // 
+            this.dataGridViewImageColumn11.DataPropertyName = "image";
+            this.dataGridViewImageColumn11.HeaderText = "image";
+            this.dataGridViewImageColumn11.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.dataGridViewImageColumn11.Name = "dataGridViewImageColumn11";
             // 
             // dataGridViewTextBoxColumn46
             // 
@@ -648,7 +692,6 @@ namespace Program.forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminUsersForm";
             this.Controls.SetChildIndex(this.buttonIMG, 0);
-
             this.Controls.SetChildIndex(this.buttonClr, 0);
             this.Controls.SetChildIndex(this.buttonInsert, 0);
             this.Controls.SetChildIndex(this.buttonUpdate, 0);
@@ -749,5 +792,11 @@ namespace Program.forms
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn10;
         private System.Windows.Forms.Button buttonRefresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn51;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn52;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn53;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn54;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn55;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn11;
     }
 }

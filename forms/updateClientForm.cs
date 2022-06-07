@@ -17,6 +17,7 @@ namespace Program.forms
         {
             InitializeComponent();
             Show();
+            button1.Text = "Update data";
         }
 
         internal void Show(string id, string var, string name, string nip, string reg, string desc)
