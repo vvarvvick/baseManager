@@ -55,7 +55,7 @@ namespace Program.forms
             this.dataGridView1.Location = new System.Drawing.Point(12, 157);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(873, 332);
+            this.dataGridView1.Size = new System.Drawing.Size(848, 332);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
@@ -188,7 +188,7 @@ namespace Program.forms
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox1.Location = new System.Drawing.Point(647, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(238, 123);
+            this.pictureBox1.Size = new System.Drawing.Size(213, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -197,7 +197,7 @@ namespace Program.forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 501);
+            this.ClientSize = new System.Drawing.Size(872, 501);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);

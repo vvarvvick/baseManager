@@ -53,10 +53,9 @@ namespace Program.forms
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             button1.Enabled = true;
+
             if (textBox1.Text == "")
-            {
                 button1.Enabled = false;
-            }
         }
     }
 }
