@@ -65,7 +65,8 @@ namespace Program.forms
             Connection.DataSource();
             command.Connection = Connection.connMaster;
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable(); adapter.Fill(table);
+            DataTable table = new DataTable(); 
+            adapter.Fill(table);
 
             dataGridView1.RowTemplate.Height = 60;
             dataGridView1.AllowUserToAddRows = false;
@@ -141,11 +142,12 @@ namespace Program.forms
 
         protected virtual void dataGridView1_Click(object sender, EventArgs e)
         {
-            Byte[] img = (Byte[])dataGridView1.CurrentRow.Cells[5].Value;
-
-            MemoryStream ms = new MemoryStream(img);
-
-            pictureBox1.Image = Image.FromStream(ms);
+            if (dataGridView1.CurrentRow.Cells[5].Value != null)
+            {
+                Byte[] img = (Byte[])dataGridView1.CurrentRow.Cells[5].Value;
+                MemoryStream ms = new MemoryStream(img);
+                pictureBox1.Image = Image.FromStream(ms);
+            }
 
             textBoxVar.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             textBoxName.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();

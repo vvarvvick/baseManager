@@ -41,6 +41,7 @@ namespace Program
             this.labelCurrentTitle = new System.Windows.Forms.Label();
             this.iconPictureBoxCurrentIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panelCenter = new System.Windows.Forms.Panel();
+            this.iconButtonFils = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeBtn)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -51,6 +52,7 @@ namespace Program
             // 
             this.panelMenu.BackColor = System.Drawing.Color.Silver;
             this.panelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMenu.Controls.Add(this.iconButtonFils);
             this.panelMenu.Controls.Add(this.pictureBoxHomeBtn);
             this.panelMenu.Controls.Add(this.iconButtonExit);
             this.panelMenu.Controls.Add(this.iconButtonAdmin);
@@ -114,7 +116,7 @@ namespace Program
             this.iconButtonAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonAdmin.IconSize = 30;
             this.iconButtonAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonAdmin.Location = new System.Drawing.Point(0, 402);
+            this.iconButtonAdmin.Location = new System.Drawing.Point(0, 428);
             this.iconButtonAdmin.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonAdmin.Name = "iconButtonAdmin";
             this.iconButtonAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -139,7 +141,7 @@ namespace Program
             this.iconButtonOrder.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonOrder.IconSize = 30;
             this.iconButtonOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonOrder.Location = new System.Drawing.Point(0, 345);
+            this.iconButtonOrder.Location = new System.Drawing.Point(0, 320);
             this.iconButtonOrder.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonOrder.Name = "iconButtonOrder";
             this.iconButtonOrder.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -164,7 +166,7 @@ namespace Program
             this.iconButtonBase.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonBase.IconSize = 30;
             this.iconButtonBase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonBase.Location = new System.Drawing.Point(0, 288);
+            this.iconButtonBase.Location = new System.Drawing.Point(0, 266);
             this.iconButtonBase.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonBase.Name = "iconButtonBase";
             this.iconButtonBase.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -189,7 +191,7 @@ namespace Program
             this.iconButtonClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonClient.IconSize = 30;
             this.iconButtonClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonClient.Location = new System.Drawing.Point(0, 231);
+            this.iconButtonClient.Location = new System.Drawing.Point(0, 212);
             this.iconButtonClient.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonClient.Name = "iconButtonClient";
             this.iconButtonClient.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -214,7 +216,7 @@ namespace Program
             this.iconButtonLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonLogin.IconSize = 30;
             this.iconButtonLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonLogin.Location = new System.Drawing.Point(0, 174);
+            this.iconButtonLogin.Location = new System.Drawing.Point(0, 158);
             this.iconButtonLogin.Margin = new System.Windows.Forms.Padding(0);
             this.iconButtonLogin.Name = "iconButtonLogin";
             this.iconButtonLogin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -270,7 +272,32 @@ namespace Program
             this.panelCenter.Location = new System.Drawing.Point(250, 90);
             this.panelCenter.Name = "panelCenter";
             this.panelCenter.Size = new System.Drawing.Size(882, 484);
-            this.panelCenter.TabIndex = 2;
+            this.panelCenter.TabIndex = 0;
+            // 
+            // iconButtonFils
+            // 
+            this.iconButtonFils.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonFils.FlatAppearance.BorderSize = 0;
+            this.iconButtonFils.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonFils.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.iconButtonFils.ForeColor = System.Drawing.Color.White;
+            this.iconButtonFils.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconButtonFils.IconColor = System.Drawing.Color.White;
+            this.iconButtonFils.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonFils.IconSize = 30;
+            this.iconButtonFils.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonFils.Location = new System.Drawing.Point(0, 374);
+            this.iconButtonFils.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonFils.Name = "iconButtonFils";
+            this.iconButtonFils.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonFils.Size = new System.Drawing.Size(250, 40);
+            this.iconButtonFils.TabIndex = 5;
+            this.iconButtonFils.Text = "Search";
+            this.iconButtonFils.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonFils.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonFils.UseVisualStyleBackColor = false;
+            this.iconButtonFils.Visible = false;
+            this.iconButtonFils.Click += new System.EventHandler(this.iconButtonFils_Click);
             // 
             // FormMain
             // 
@@ -306,6 +333,7 @@ namespace Program
         private FontAwesome.Sharp.IconButton iconButtonExit;
         private FontAwesome.Sharp.IconButton iconButtonAdmin;
         private System.Windows.Forms.PictureBox pictureBoxHomeBtn;
+        private FontAwesome.Sharp.IconButton iconButtonFils;
     }
 }
 

@@ -54,6 +54,7 @@ namespace Program
                     iconButtonClient.Visible = false;
                     iconButtonBase.Visible = false;
                     iconButtonOrder.Visible = false;
+                    iconButtonFils.Visible = false;
                     iconButtonAdmin.Visible = false;
                     iconButtonExit.Visible = true;
                     break;
@@ -62,6 +63,7 @@ namespace Program
                     iconButtonClient.Visible = true;
                     iconButtonBase.Visible = true;
                     iconButtonOrder.Visible = true;
+                    iconButtonFils.Visible = true;
                     iconButtonAdmin.Visible = false;
                     iconButtonExit.Visible = true;
                     break;
@@ -70,6 +72,7 @@ namespace Program
                     iconButtonClient.Visible = true;
                     iconButtonBase.Visible = true;
                     iconButtonOrder.Visible = true;
+                    iconButtonFils.Visible = true;
                     iconButtonAdmin.Visible = false;
                     iconButtonExit.Visible = true;
                     break;
@@ -78,6 +81,7 @@ namespace Program
                     iconButtonClient.Visible = true;
                     iconButtonBase.Visible = true;
                     iconButtonOrder.Visible = true;
+                    iconButtonFils.Visible = true;
                     iconButtonAdmin.Visible = true;
                     iconButtonExit.Visible = true;
                     break;
@@ -168,6 +172,12 @@ namespace Program
         {
             Activatebutton(sender, Colors.color4);
             Openchildform(new ordersForm());
+        }
+
+        private void iconButtonFils_Click(object sender, EventArgs e)
+        {
+            Activatebutton(sender, Colors.color5);
+            Openchildform(new searchForm());
         }
 
         private void iconButtonAdmin_Click(object sender, EventArgs e)

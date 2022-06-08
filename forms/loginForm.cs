@@ -36,7 +36,7 @@ namespace Program.forms
                     this.Hide();
                     (this.Owner as FormMain).Reset();
                     (this.Owner as FormMain).iconButtonLogin.IconChar = FontAwesome.Sharp.IconChar.User;
-                    MessageBox.Show("Hi " + FormMain.DataUser.name + " :D", "Information", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                    MessageBox.Show("Hi " + FormMain.DataUser.name, "Information", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
                 }
             }
         }
