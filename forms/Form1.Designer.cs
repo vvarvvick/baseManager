@@ -30,6 +30,7 @@ namespace Program
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButtonFils = new FontAwesome.Sharp.IconButton();
             this.pictureBoxHomeBtn = new System.Windows.Forms.PictureBox();
             this.iconButtonExit = new FontAwesome.Sharp.IconButton();
             this.iconButtonAdmin = new FontAwesome.Sharp.IconButton();
@@ -41,7 +42,6 @@ namespace Program
             this.labelCurrentTitle = new System.Windows.Forms.Label();
             this.iconPictureBoxCurrentIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panelCenter = new System.Windows.Forms.Panel();
-            this.iconButtonFils = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHomeBtn)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -50,7 +50,7 @@ namespace Program
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.Silver;
+            this.panelMenu.BackColor = System.Drawing.Color.Gainsboro;
             this.panelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelMenu.Controls.Add(this.iconButtonFils);
             this.panelMenu.Controls.Add(this.pictureBoxHomeBtn);
@@ -65,6 +65,31 @@ namespace Program
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(250, 574);
             this.panelMenu.TabIndex = 0;
+            // 
+            // iconButtonFils
+            // 
+            this.iconButtonFils.BackColor = System.Drawing.Color.Transparent;
+            this.iconButtonFils.FlatAppearance.BorderSize = 0;
+            this.iconButtonFils.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonFils.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.iconButtonFils.ForeColor = System.Drawing.Color.Black;
+            this.iconButtonFils.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconButtonFils.IconColor = System.Drawing.Color.Black;
+            this.iconButtonFils.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButtonFils.IconSize = 30;
+            this.iconButtonFils.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonFils.Location = new System.Drawing.Point(0, 374);
+            this.iconButtonFils.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButtonFils.Name = "iconButtonFils";
+            this.iconButtonFils.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonFils.Size = new System.Drawing.Size(250, 40);
+            this.iconButtonFils.TabIndex = 5;
+            this.iconButtonFils.Text = "Search";
+            this.iconButtonFils.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonFils.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonFils.UseVisualStyleBackColor = false;
+            this.iconButtonFils.Visible = false;
+            this.iconButtonFils.Click += new System.EventHandler(this.iconButtonFils_Click);
             // 
             // pictureBoxHomeBtn
             // 
@@ -85,9 +110,9 @@ namespace Program
             this.iconButtonExit.FlatAppearance.BorderSize = 0;
             this.iconButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonExit.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonExit.ForeColor = System.Drawing.Color.White;
+            this.iconButtonExit.ForeColor = System.Drawing.Color.Black;
             this.iconButtonExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.iconButtonExit.IconColor = System.Drawing.Color.White;
+            this.iconButtonExit.IconColor = System.Drawing.Color.Black;
             this.iconButtonExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonExit.IconSize = 30;
             this.iconButtonExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,9 +135,9 @@ namespace Program
             this.iconButtonAdmin.FlatAppearance.BorderSize = 0;
             this.iconButtonAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonAdmin.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonAdmin.ForeColor = System.Drawing.Color.White;
+            this.iconButtonAdmin.ForeColor = System.Drawing.Color.Black;
             this.iconButtonAdmin.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButtonAdmin.IconColor = System.Drawing.Color.White;
+            this.iconButtonAdmin.IconColor = System.Drawing.Color.Black;
             this.iconButtonAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonAdmin.IconSize = 30;
             this.iconButtonAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,9 +160,9 @@ namespace Program
             this.iconButtonOrder.FlatAppearance.BorderSize = 0;
             this.iconButtonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonOrder.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonOrder.ForeColor = System.Drawing.Color.White;
+            this.iconButtonOrder.ForeColor = System.Drawing.Color.Black;
             this.iconButtonOrder.IconChar = FontAwesome.Sharp.IconChar.List;
-            this.iconButtonOrder.IconColor = System.Drawing.Color.White;
+            this.iconButtonOrder.IconColor = System.Drawing.Color.Black;
             this.iconButtonOrder.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonOrder.IconSize = 30;
             this.iconButtonOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,9 +185,9 @@ namespace Program
             this.iconButtonBase.FlatAppearance.BorderSize = 0;
             this.iconButtonBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonBase.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonBase.ForeColor = System.Drawing.Color.White;
+            this.iconButtonBase.ForeColor = System.Drawing.Color.Black;
             this.iconButtonBase.IconChar = FontAwesome.Sharp.IconChar.Database;
-            this.iconButtonBase.IconColor = System.Drawing.Color.White;
+            this.iconButtonBase.IconColor = System.Drawing.Color.Black;
             this.iconButtonBase.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonBase.IconSize = 30;
             this.iconButtonBase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,9 +210,9 @@ namespace Program
             this.iconButtonClient.FlatAppearance.BorderSize = 0;
             this.iconButtonClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonClient.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonClient.ForeColor = System.Drawing.Color.White;
+            this.iconButtonClient.ForeColor = System.Drawing.Color.Black;
             this.iconButtonClient.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows;
-            this.iconButtonClient.IconColor = System.Drawing.Color.White;
+            this.iconButtonClient.IconColor = System.Drawing.Color.Black;
             this.iconButtonClient.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonClient.IconSize = 30;
             this.iconButtonClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,9 +235,9 @@ namespace Program
             this.iconButtonLogin.FlatAppearance.BorderSize = 0;
             this.iconButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonLogin.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonLogin.ForeColor = System.Drawing.Color.White;
+            this.iconButtonLogin.ForeColor = System.Drawing.Color.Black;
             this.iconButtonLogin.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconButtonLogin.IconColor = System.Drawing.Color.White;
+            this.iconButtonLogin.IconColor = System.Drawing.Color.Black;
             this.iconButtonLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonLogin.IconSize = 30;
             this.iconButtonLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,31 +298,6 @@ namespace Program
             this.panelCenter.Name = "panelCenter";
             this.panelCenter.Size = new System.Drawing.Size(882, 484);
             this.panelCenter.TabIndex = 0;
-            // 
-            // iconButtonFils
-            // 
-            this.iconButtonFils.BackColor = System.Drawing.Color.Transparent;
-            this.iconButtonFils.FlatAppearance.BorderSize = 0;
-            this.iconButtonFils.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonFils.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.iconButtonFils.ForeColor = System.Drawing.Color.White;
-            this.iconButtonFils.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconButtonFils.IconColor = System.Drawing.Color.White;
-            this.iconButtonFils.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonFils.IconSize = 30;
-            this.iconButtonFils.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonFils.Location = new System.Drawing.Point(0, 374);
-            this.iconButtonFils.Margin = new System.Windows.Forms.Padding(0);
-            this.iconButtonFils.Name = "iconButtonFils";
-            this.iconButtonFils.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonFils.Size = new System.Drawing.Size(250, 40);
-            this.iconButtonFils.TabIndex = 5;
-            this.iconButtonFils.Text = "Search";
-            this.iconButtonFils.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonFils.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonFils.UseVisualStyleBackColor = false;
-            this.iconButtonFils.Visible = false;
-            this.iconButtonFils.Click += new System.EventHandler(this.iconButtonFils_Click);
             // 
             // FormMain
             // 
